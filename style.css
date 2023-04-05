@@ -1,1 +1,11 @@
+#wrapper{
+    margin: 80px;
+}
 
+p{
+    font-family: monospace;
+}
+
+#board{
+    width: 350px;
+}

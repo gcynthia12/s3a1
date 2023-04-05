@@ -3,5 +3,40 @@
 </head>
 
 <body>
-    
+<div id="wrapper">
+    <p>
+    //how to play mancala by yourself <br>
+    <br>
+    <img id="board" src="board.jpeg" >
+    <br><br><br><br>
+    for (i = 48; i > 0; i = i - 4){<br>
+        &emsp; &emsp; place four marbles in the following small pit;<br>
+    }<br>
+    <br>
+    n = random() * 11 + 1;<br>
+    pick up all the marbles in the small pit numbered n;<br>
+    <br>
+    while (total number of marbles across all small pits > 0){<br>
+        &emsp; &emsp; for (i = marbles in hand; i > 0; i--){<br>
+        &emsp; &emsp; &emsp; &emsp; place one marble in the following pit;<br>
+        &emsp; &emsp; }<br>
+        &emsp; &emsp; if (last pit into which marble was placed = non-empty && small){<br>
+        &emsp; &emsp; &emsp; &emsp; pick up all the marbles in this pit;<br>
+        &emsp; &emsp; } else {<br>
+        &emsp; &emsp; &emsp; &emsp; n = random() * 11 + 1;<br>
+        &emsp; &emsp; &emsp; &emsp; pick up all the marbles in the small pit numbered n;<br>
+        &emsp; &emsp; }<br>
+    }<br>
+    <br>
+    countA = 0;<br>
+    countB = 0;<br>
+
+    for (i = marbles in large pit A; i > 0; i--){<br>
+        countA++;<br>
+    }<br>
+    for (i = marbles in large pit B; i > 0; i--){<br>
+        countB++;<br>
+    }<br>
+    </p>
+</div>
 </body>
