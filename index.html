@@ -5,6 +5,7 @@
 <body>
 <div id="wrapper">
     <p>
+    <video id="video" controls><source src=video.mp4 type="video/mp4"></video>
     //how to play mancala by yourself <br>
     <br>
     <img id="board" src="board.jpeg" >
@@ -18,12 +19,15 @@
     <br>
     while (total number of marbles across all small pits > 0){<br>
         &emsp; &emsp; for (i = marbles in hand; i > 0; i--){<br>
-        &emsp; &emsp; &emsp; &emsp; place one marble in the following pit;<br>
+        &emsp; &emsp; &emsp; &emsp; place one marble in the following pit, clockwise;<br>
         &emsp; &emsp; }<br>
         &emsp; &emsp; if (last pit into which marble was placed = non-empty && small){<br>
         &emsp; &emsp; &emsp; &emsp; pick up all the marbles in this pit;<br>
         &emsp; &emsp; } else {<br>
         &emsp; &emsp; &emsp; &emsp; n = random() * 11 + 1;<br>
+        &emsp; &emsp; &emsp; &emsp; while (the pit numbered n is empty){<br>
+        &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; n = random() * 11 + 1;<br>
+        &emsp; &emsp; &emsp; &emsp; }<br>
         &emsp; &emsp; &emsp; &emsp; pick up all the marbles in the small pit numbered n;<br>
         &emsp; &emsp; }<br>
     }<br>
